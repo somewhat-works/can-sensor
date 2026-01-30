@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;FDCAN_Classic_Frame_Networking&apos;" deleteContents="false" description="Delete resource &apos;FDCAN_Classic_Frame_Networking&apos;" element1="/FDCAN_Classic_Frame_Networking" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1768528059416"/>
+</session>

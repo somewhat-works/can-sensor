@@ -1,0 +1,173 @@
+00:49:17 **** Incremental Build of configuration Debug for project nucleo ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32C092xx -c -I../Core/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I../Drivers/BSP/STM32C0xx_Nucleo -I../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:32: error: 'TX_ID' undeclared (first use in this function); did you mean 'RX_ID'?
+  130 |   sFilterConfig.FilterID1    = TX_ID;
+      |                                ^~~~~
+      |                                RX_ID
+../Core/Src/main.c:130:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'I2C_Scan':
+../Core/Src/main.c:214:19: warning: variable 'found_address' set but not used [-Wunused-but-set-variable]
+  214 |           uint8_t found_address = 0;
+      |                   ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'can_bus':
+../Core/Src/main.c:235:5: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  235 |     memcpy(txData, &co2, sizeof(int16_t));    // Bytes 0-1: int16_t
+      |     ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:235:5: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  235 |     memcpy(txData, &co2, sizeof(int16_t));    // Bytes 0-1: int16_t
+      |     ^~~~~~
+../Core/Src/main.c:235:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:49:25 **** Incremental Build of configuration Debug for project nucleo ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32C092xx -c -I../Core/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I../Drivers/BSP/STM32C0xx_Nucleo -I../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'I2C_Scan':
+../Core/Src/main.c:214:19: warning: variable 'found_address' set but not used [-Wunused-but-set-variable]
+  214 |           uint8_t found_address = 0;
+      |                   ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'can_bus':
+../Core/Src/main.c:235:5: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  235 |     memcpy(txData, &co2, sizeof(int16_t));    // Bytes 0-1: int16_t
+      |     ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:235:5: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  235 |     memcpy(txData, &co2, sizeof(int16_t));    // Bytes 0-1: int16_t
+      |     ^~~~~~
+../Core/Src/main.c:235:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+arm-none-eabi-gcc -o "nucleo.elf" @"objects.list"   -mcpu=cortex-m0plus -T"E:\esp32 arduino monitor\stm32 stuff\nucleo\STM32C092RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="nucleo.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: nucleo.elf
+ 
+arm-none-eabi-size  nucleo.elf 
+arm-none-eabi-objdump -h -S nucleo.elf  > "nucleo.list"
+   text	   data	    bss	    dec	    hex	filename
+  19600	     48	   2016	  21664	   54a0	nucleo.elf
+Finished building: default.size.stdout
+ 
+Finished building: nucleo.list
+ 
+00:50:13 **** Incremental Build of configuration Debug for project nucleo ****
+make -j12 all 
+arm-none-eabi-size  nucleo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19600	     48	   2016	  21664	   54a0	nucleo.elf
+Finished building: default.size.stdout
+ 
+00:51:43 **** Incremental Build of configuration Debug for project nucleo ****
+make -j12 all 
+arm-none-eabi-size  nucleo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19600	     48	   2016	  21664	   54a0	nucleo.elf
+Finished building: default.size.stdout
+ 
+00:56:43 **** Incremental Build of configuration Debug for project nucleo ****
+make -j12 all 
+arm-none-eabi-size  nucleo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19600	     48	   2016	  21664	   54a0	nucleo.elf
+Finished building: default.size.stdout
+ 
+00:57:18 **** Incremental Build of configuration Debug for project nucleo ****
+make -j12 all 
+arm-none-eabi-size  nucleo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19600	     48	   2016	  21664	   54a0	nucleo.elf
+Finished building: default.size.stdout
+ 
+01:01:11 **** Incremental Build of configuration Debug for project nucleo ****
+make -j12 all 
+arm-none-eabi-size  nucleo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19600	     48	   2016	  21664	   54a0	nucleo.elf
+Finished building: default.size.stdout
+ 
+01:01:28 **** Incremental Build of configuration Debug for project nucleo ****
+make -j12 all 
+arm-none-eabi-size  nucleo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19600	     48	   2016	  21664	   54a0	nucleo.elf
+Finished building: default.size.stdout
+ 
+01:03:51 **** Incremental Build of configuration Debug for project nucleo ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32C092xx -c -I../Core/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I../Drivers/BSP/STM32C0xx_Nucleo -I../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'I2C_Scan':
+../Core/Src/main.c:214:19: warning: variable 'found_address' set but not used [-Wunused-but-set-variable]
+  214 |           uint8_t found_address = 0;
+      |                   ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'can_bus':
+../Core/Src/main.c:235:5: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  235 |     memcpy(txData, &co2, sizeof(int16_t));    // Bytes 0-1: int16_t
+      |     ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:235:5: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  235 |     memcpy(txData, &co2, sizeof(int16_t));    // Bytes 0-1: int16_t
+      |     ^~~~~~
+../Core/Src/main.c:235:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+arm-none-eabi-gcc -o "nucleo.elf" @"objects.list"   -mcpu=cortex-m0plus -T"E:\esp32 arduino monitor\stm32 stuff\nucleo\STM32C092RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="nucleo.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: nucleo.elf
+ 
+arm-none-eabi-size  nucleo.elf 
+arm-none-eabi-objdump -h -S nucleo.elf  > "nucleo.list"
+   text	   data	    bss	    dec	    hex	filename
+  19600	     48	   2016	  21664	   54a0	nucleo.elf
+Finished building: default.size.stdout
+ 
+Finished building: nucleo.list
+ 
+01:04:53 **** Incremental Build of configuration Debug for project nucleo ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_NUCLEO_64 -DUSE_HAL_DRIVER -DSTM32C092xx -c -I../Core/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I../Drivers/BSP/STM32C0xx_Nucleo -I../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'I2C_Scan':
+../Core/Src/main.c:214:19: warning: variable 'found_address' set but not used [-Wunused-but-set-variable]
+  214 |           uint8_t found_address = 0;
+      |                   ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'can_bus':
+../Core/Src/main.c:235:5: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  235 |     memcpy(txData, &co2, sizeof(int16_t));    // Bytes 0-1: int16_t
+      |     ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:235:5: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  235 |     memcpy(txData, &co2, sizeof(int16_t));    // Bytes 0-1: int16_t
+      |     ^~~~~~
+../Core/Src/main.c:235:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+arm-none-eabi-gcc -o "nucleo.elf" @"objects.list"   -mcpu=cortex-m0plus -T"E:\esp32 arduino monitor\stm32 stuff\nucleo\STM32C092RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="nucleo.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: nucleo.elf
+ 
+arm-none-eabi-size  nucleo.elf 
+arm-none-eabi-objdump -h -S nucleo.elf  > "nucleo.list"
+   text	   data	    bss	    dec	    hex	filename
+  19604	     48	   2016	  21668	   54a4	nucleo.elf
+Finished building: default.size.stdout
+ 
+Finished building: nucleo.list
+ 
+01:05:51 **** Incremental Build of configuration Debug for project nucleo ****
+make -j12 all 
+arm-none-eabi-size  nucleo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19604	     48	   2016	  21668	   54a4	nucleo.elf
+Finished building: default.size.stdout
+ 
+01:06:10 **** Incremental Build of configuration Debug for project nucleo ****
+make -j12 all 
+arm-none-eabi-size  nucleo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19604	     48	   2016	  21668	   54a4	nucleo.elf
+Finished building: default.size.stdout
+ 
