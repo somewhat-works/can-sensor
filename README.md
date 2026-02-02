@@ -6,7 +6,7 @@ CAN off board
 Using uno r4 as usb to can adapter  
 
   
-#To do:  
+# To do:  
 1. Get PCB  
 2. Write code  
 3. Test it
