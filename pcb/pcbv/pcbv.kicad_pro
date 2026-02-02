@@ -51,7 +51,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -180,7 +186,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +215,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -473,126 +486,29 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.2,
+        "name": "power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0,
+        "via_diameter": 1.0,
+        "via_drill": 0.3
       }
     ],
     "meta": {
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "Net-(C11-Pad1)": [
-        "OSCX_OUT"
-      ],
-      "Net-(C7-Pad1)": [
-        "OSC_IN"
-      ],
-      "Net-(C8-Pad1)": [
-        "OSC_OUT"
-      ],
-      "Net-(C9-Pad1)": [
-        "OSCX_IN"
-      ],
-      "Net-(D1-K)": [
-        "NRST"
-      ],
-      "Net-(J2-Pin_1)": [
-        "SDA"
-      ],
-      "Net-(J2-Pin_2)": [
-        "SCL"
-      ],
-      "Net-(J3-Pin_1)": [
-        "CAN_TX"
-      ],
-      "Net-(J3-Pin_2)": [
-        "CAN_RX"
-      ],
-      "Net-(J4-Pin_2)": [
-        "CANH"
-      ],
-      "Net-(J4-Pin_3)": [
-        "CANL"
-      ],
-      "Net-(J5-Pin_1)": [
-        "CAN_TX"
-      ],
-      "Net-(J5-Pin_2)": [
-        "CAN_RX"
-      ],
-      "Net-(U1-VO+)": [
-        "NO+"
-      ],
-      "Net-(U1-VO-)": [
-        "NO-"
-      ],
-      "unconnected-(J1-JCLK{slash}SWCLK-Pad6)": [
-        "SWCLK"
-      ],
-      "unconnected-(J1-JTMS{slash}SWDIO-Pad4)": [
-        "SWDIO"
-      ],
-      "unconnected-(J1-VCP_RX-Pad13)": [
-        "VCP_RX"
-      ],
-      "unconnected-(J1-VCP_TX-Pad14)": [
-        "VCP_TX"
-      ],
-      "unconnected-(J1-~{RST}-Pad12)": [
-        "NRST"
-      ],
-      "unconnected-(U1-EOC-Pad8)": [
-        "EOC"
-      ],
-      "unconnected-(U1-MOSI{slash}SDA-Pad2)": [
-        "SDA"
-      ],
-      "unconnected-(U1-RES-Pad9)": [
-        "RES"
-      ],
-      "unconnected-(U1-SCLK{slash}SCL-Pad3)": [
-        "SCL"
-      ],
-      "unconnected-(U2A-PA13-Pad45)": [
-        "SWDIO"
-      ],
-      "unconnected-(U2A-PA14-BOOT0-Pad46)": [
-        "SWCLK"
-      ],
-      "unconnected-(U2A-PA2-Pad19)": [
-        "VCP_TX"
-      ],
-      "unconnected-(U2A-PA3-Pad20)": [
-        "VCP_RX"
-      ],
-      "unconnected-(U2A-PB7-Pad61)": [
-        "EOC"
-      ],
-      "unconnected-(U2A-PC14-OSCX_IN-Pad4)": [
-        "OSCX_IN"
-      ],
-      "unconnected-(U2A-PC15-OSCX_OUT-Pad5)": [
-        "OSCX_OUT"
-      ],
-      "unconnected-(U2A-PD0-Pad50)": [
-        "CAN_RX"
-      ],
-      "unconnected-(U2A-PD1-Pad51)": [
-        "CAN_TX"
-      ],
-      "unconnected-(U2A-PF0-OSC_IN-Pad10)": [
-        "OSC_IN"
-      ],
-      "unconnected-(U2A-PF1-OSC_OUT-Pad11)": [
-        "OSC_OUT"
-      ],
-      "unconnected-(U3-SCL-Pad9)": [
-        "SCL"
-      ],
-      "unconnected-(U3-SDA-Pad10)": [
-        "SDA"
-      ]
-    },
-    "netclass_patterns": []
+    "netclass_assignments": null,
+    "netclass_patterns": [
+      {
+        "netclass": "power",
+        "pattern": ""
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -672,12 +588,36 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S3.3",
+          "name": "KLC_S3.3",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S4.1",
+          "name": "KLC_S4.1",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },

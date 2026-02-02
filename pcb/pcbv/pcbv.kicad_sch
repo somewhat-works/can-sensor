@@ -2954,7 +2954,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_MEC_5G"
+		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2974,7 +2974,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "SW_MEC_5G"
+			(property "Value" "SW_Push"
 				(at 0 -1.524 0)
 				(effects
 					(font
@@ -2991,7 +2991,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488"
+			(property "Datasheet" "~"
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -3000,7 +3000,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "MEC 5G single pole normally-open tactile switch"
+			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3018,16 +3018,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SW*MEC*5G*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_MEC_5G_0_1"
+			(symbol "SW_Push_0_1"
 				(circle
 					(center -2.032 0)
 					(radius 0.508)
@@ -3077,7 +3068,7 @@
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
-					(name "A"
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3095,28 +3086,7 @@
 				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "SW_MEC_5G_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(hide yes)
-					(name "A"
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3124,25 +3094,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(hide yes)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5457,12 +5408,6 @@
 		(uuid "1c30c4c4-7b01-4f10-a97d-2cfcf4083e97")
 	)
 	(junction
-		(at 358.14 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1ecc6911-6cb1-455e-ab20-abad0b259842")
-	)
-	(junction
 		(at 160.02 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5595,12 +5540,6 @@
 		(uuid "df93afa3-48ca-430c-a798-54c7388c00a7")
 	)
 	(junction
-		(at 358.14 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e32615c6-0c38-4353-9894-36844555f209")
-	)
-	(junction
 		(at 351.79 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5642,7 +5581,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 107.95) (xy 95.25 107.95)
+			(xy 87.63 107.95) (xy 96.52 107.95)
 		)
 		(stroke
 			(width 0)
@@ -5679,26 +5618,6 @@
 			(type default)
 		)
 		(uuid "015f17d0-2a53-41a2-b8a6-e22e40d4437d")
-	)
-	(wire
-		(pts
-			(xy 358.14 29.21) (xy 359.41 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "024c2725-4980-4e49-8fb4-2e0522d047c9")
-	)
-	(wire
-		(pts
-			(xy 179.07 189.23) (xy 170.18 189.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0284bd03-4f85-4861-a110-c8b1306ba6bb")
 	)
 	(wire
 		(pts
@@ -5792,13 +5711,23 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 36.83) (xy 162.56 36.83)
+			(xy 161.29 36.83) (xy 163.83 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0bde5775-38e8-4962-be0b-3a8281c1f011")
+	)
+	(wire
+		(pts
+			(xy 306.07 30.48) (xy 314.96 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d4749f7-9f5d-49ff-ad37-65427fe92bba")
 	)
 	(wire
 		(pts
@@ -5852,43 +5781,23 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 172.72) (xy 74.93 172.72)
+			(xy 66.04 172.72) (xy 74.93 172.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "182310d7-4dc6-4d4f-8150-7dc9097c9ad1")
+		(uuid "18b938d0-4687-46ea-8af2-ad7050e07643")
 	)
 	(wire
 		(pts
-			(xy 93.98 33.02) (xy 100.33 33.02)
+			(xy 93.98 33.02) (xy 101.6 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1a68f141-8281-4378-8ff9-a8bef1ca5e9a")
-	)
-	(wire
-		(pts
-			(xy 358.14 36.83) (xy 359.41 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a81d46d-7279-4de5-a863-a1033d710b6c")
-	)
-	(wire
-		(pts
-			(xy 314.96 30.48) (xy 314.96 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b7b0c99-25e3-4a63-9436-ddafe33e321e")
 	)
 	(wire
 		(pts
@@ -5919,16 +5828,6 @@
 			(type default)
 		)
 		(uuid "1ce79a08-dadc-4f4b-934d-34e7646c1dfc")
-	)
-	(wire
-		(pts
-			(xy 179.07 190.5) (xy 179.07 189.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d1ee123-dc8c-40b7-bbaa-6df8758dca50")
 	)
 	(wire
 		(pts
@@ -6002,16 +5901,6 @@
 	)
 	(wire
 		(pts
-			(xy 303.53 31.75) (xy 303.53 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d78b8ab-5ffa-4b6e-9a6b-ce23401463a1")
-	)
-	(wire
-		(pts
 			(xy 312.42 172.72) (xy 312.42 173.99)
 		)
 		(stroke
@@ -6039,16 +5928,6 @@
 			(type default)
 		)
 		(uuid "3212f9c4-207c-4992-bd67-0a3cf6f491a4")
-	)
-	(wire
-		(pts
-			(xy 298.45 29.21) (xy 298.45 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "326c7f76-b75a-4de1-9a24-f09dd780ee65")
 	)
 	(wire
 		(pts
@@ -6182,6 +6061,16 @@
 	)
 	(wire
 		(pts
+			(xy 351.79 29.21) (xy 359.41 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ab2367e-3009-43b2-ae5c-eebccf1688cf")
+	)
+	(wire
+		(pts
 			(xy 73.66 119.38) (xy 73.66 120.65)
 		)
 		(stroke
@@ -6252,17 +6141,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 31.75) (xy 303.53 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5674b476-605b-4090-bc6e-065af72e4321")
-	)
-	(wire
-		(pts
-			(xy 87.63 90.17) (xy 95.25 90.17)
+			(xy 87.63 90.17) (xy 96.52 90.17)
 		)
 		(stroke
 			(width 0)
@@ -6289,16 +6168,6 @@
 			(type default)
 		)
 		(uuid "59dcb596-b25b-4014-b7b1-e1df8c92de63")
-	)
-	(wire
-		(pts
-			(xy 172.72 215.9) (xy 173.99 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59ecd001-5e1b-426b-b878-fa6058e56c22")
 	)
 	(wire
 		(pts
@@ -6379,16 +6248,6 @@
 			(type default)
 		)
 		(uuid "647a9e51-572e-462a-bc74-206176240ee8")
-	)
-	(wire
-		(pts
-			(xy 298.45 27.94) (xy 314.96 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6586f5c7-fcc1-4fff-bef1-3822e3ef6044")
 	)
 	(wire
 		(pts
@@ -6532,16 +6391,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 217.17) (xy 172.72 217.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ae7daef-8618-4b38-a361-980c510972a5")
-	)
-	(wire
-		(pts
 			(xy 359.41 31.75) (xy 367.03 31.75)
 		)
 		(stroke
@@ -6599,16 +6448,6 @@
 			(type default)
 		)
 		(uuid "8018a77b-f502-4e6c-b371-15bcbb20cf3f")
-	)
-	(wire
-		(pts
-			(xy 297.18 29.21) (xy 298.45 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83f966b5-d398-4c7c-b7b0-9fe418c7d410")
 	)
 	(wire
 		(pts
@@ -6702,16 +6541,6 @@
 	)
 	(wire
 		(pts
-			(xy 303.53 33.02) (xy 314.96 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8def68b5-1862-4e36-a241-acd6de5dcbe0")
-	)
-	(wire
-		(pts
 			(xy 31.75 246.38) (xy 30.48 246.38)
 		)
 		(stroke
@@ -6722,7 +6551,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 215.9) (xy 153.67 215.9)
+			(xy 151.13 215.9) (xy 173.99 215.9)
 		)
 		(stroke
 			(width 0)
@@ -6732,7 +6561,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 190.5) (xy 170.18 190.5)
+			(xy 160.02 190.5) (xy 179.07 190.5)
 		)
 		(stroke
 			(width 0)
@@ -6762,16 +6591,6 @@
 	)
 	(wire
 		(pts
-			(xy 358.14 29.21) (xy 351.79 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96423adb-6d84-4df0-8da9-b845c3450b72")
-	)
-	(wire
-		(pts
 			(xy 168.91 97.79) (xy 168.91 99.06)
 		)
 		(stroke
@@ -6792,16 +6611,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 217.17) (xy 172.72 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d054dda-b82d-4918-aa47-8d982bac5675")
-	)
-	(wire
-		(pts
 			(xy 302.26 184.15) (xy 302.26 185.42)
 		)
 		(stroke
@@ -6819,16 +6628,6 @@
 			(type default)
 		)
 		(uuid "9f5c4b59-81df-4010-9682-6eda218d5971")
-	)
-	(wire
-		(pts
-			(xy 54.61 200.66) (xy 74.93 200.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0e14b5f-9368-4164-92cb-ea4852d5b6c1")
 	)
 	(wire
 		(pts
@@ -6872,7 +6671,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 162.56) (xy 158.75 162.56)
+			(xy 151.13 162.56) (xy 160.02 162.56)
 		)
 		(stroke
 			(width 0)
@@ -6912,6 +6711,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 200.66) (xy 74.93 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a937ff6c-6fec-45dc-89d7-6c7834bc19e0")
+	)
+	(wire
+		(pts
 			(xy 269.24 162.56) (xy 274.32 162.56)
 		)
 		(stroke
@@ -6922,17 +6731,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 189.23) (xy 170.18 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9e1b183-e723-4f0a-b6ed-9824a7b92b1b")
-	)
-	(wire
-		(pts
-			(xy 30.48 30.48) (xy 43.18 30.48)
+			(xy 35.56 30.48) (xy 43.18 30.48)
 		)
 		(stroke
 			(width 0)
@@ -7029,16 +6828,6 @@
 			(type default)
 		)
 		(uuid "b6ca5c16-4487-43f2-96d0-6a07fb157ef1")
-	)
-	(wire
-		(pts
-			(xy 358.14 43.18) (xy 359.41 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b748d746-c927-4253-a5d0-17b496fe7eda")
 	)
 	(wire
 		(pts
@@ -7172,16 +6961,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 217.17) (xy 153.67 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ceab1ccf-47ed-406b-9ae0-d0fa450689b9")
-	)
-	(wire
-		(pts
 			(xy 261.62 172.72) (xy 269.24 172.72)
 		)
 		(stroke
@@ -7242,7 +7021,7 @@
 	)
 	(wire
 		(pts
-			(xy 358.14 36.83) (xy 351.79 36.83)
+			(xy 351.79 36.83) (xy 359.41 36.83)
 		)
 		(stroke
 			(width 0)
@@ -7292,16 +7071,6 @@
 	)
 	(wire
 		(pts
-			(xy 358.14 43.18) (xy 358.14 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e116ca7e-6265-44cf-a98a-ee90dd8f7827")
-	)
-	(wire
-		(pts
 			(xy 39.37 43.18) (xy 39.37 38.1)
 		)
 		(stroke
@@ -7309,6 +7078,16 @@
 			(type default)
 		)
 		(uuid "e228a5b1-55bd-4b01-b9d3-59070785a111")
+	)
+	(wire
+		(pts
+			(xy 306.07 27.94) (xy 314.96 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e335de6a-298a-426d-af7e-b8e12b7bd143")
 	)
 	(wire
 		(pts
@@ -7342,7 +7121,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 33.02) (xy 36.83 33.02)
+			(xy 30.48 33.02) (xy 36.83 33.02)
 		)
 		(stroke
 			(width 0)
@@ -7492,16 +7271,6 @@
 	)
 	(wire
 		(pts
-			(xy 358.14 25.4) (xy 358.14 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f623d881-46ba-4938-a93f-a4fb8a22c58a")
-	)
-	(wire
-		(pts
 			(xy 212.09 33.02) (xy 212.09 38.1)
 		)
 		(stroke
@@ -7590,1090 +7359,355 @@
 		)
 		(uuid "ff97d246-5ea1-478f-b174-b26155dcd237")
 	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 96.52 92.71 0)
-		(fields_autoplaced yes)
+	(label "VCP_RX"
+		(at 96.52 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "084cfcde-47fb-43d3-ba26-9394152fdd96")
-		(property "Netclass" "SWDIO"
-			(at 97.2185 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -218.44 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
+		(uuid "0dba5697-4cb5-4834-8964-0db4e7d58bbb")
 	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 247.65 31.75 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "098ddd04-6bf6-4eaf-aff6-2a10358ab075")
-		(property "Netclass" "OSCX_IN"
-			(at 248.3485 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at 57.15 -50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 100.33 33.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "13032edf-215f-47b1-9ba2-8dc6700051fb")
-		(property "Netclass" "RES"
-			(at 101.0285 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -214.63 -5.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 163.83 39.37 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1d621035-cc0d-4c8f-ac7d-640e7f8119bb")
-		(property "Netclass" "SCL"
-			(at 164.5285 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -151.13 1.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
+	(label "OSC_OUT"
 		(at 231.14 33.02 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "27957a7a-91ce-4cac-aae2-11f1a910f86e")
-		(property "Netclass" "OSC_OUT"
-			(at 231.8385 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at 40.64 -49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
+		(uuid "120af572-69a5-4672-a24d-e4a2100323af")
 	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 162.56 36.83 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2dfb03ac-d4c2-483c-8bbb-6a5b8af229cf")
-		(property "Netclass" "SDA"
-			(at 163.2585 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -76.2 -3.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 158.75 213.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "30650a15-fdd9-49c2-93c1-c0a0a190bc88")
-		(property "Netclass" "CAN_RX"
-			(at 159.4485 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -31.75 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 96.52 110.49 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "34de9369-27ee-4ece-9f5c-3af0c920bd5f")
-		(property "Netclass" "VCP_TX"
-			(at 97.2185 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -218.44 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 63.5 243.84 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3a0ec1d2-ee3a-4cf9-b9df-2a9306da522c")
-		(property "Netclass" "OSCX_IN"
-			(at 64.1985 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -127 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 57.15 246.38 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3aa24586-402e-4008-8bf9-8681f6f85c28")
-		(property "Netclass" "NRST"
-			(at 57.8485 243.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -340.36 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 30.48 43.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "406d1333-45f9-451c-8096-323d1f25c757")
-		(property "Netclass" "NO-"
-			(at 31.1785 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -284.48 5.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 66.04 170.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5e83c3f2-3a61-49df-a532-1280fd5a14a1")
-		(property "Netclass" "VCP_TX"
-			(at 66.7385 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -248.92 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 158.75 217.17 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "705e05a9-07c2-4e36-bd4b-9687fdd6c11f")
-		(property "Netclass" "CAN_TX"
-			(at 159.4485 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -30.48 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 101.6 35.56 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7a45736f-9330-47bf-b25a-38dcb07fef0b")
-		(property "Netclass" "EOC"
-			(at 102.2985 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -213.36 -2.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 358.14 25.4 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7f64c8c6-8f42-4efd-861d-f0c1433ce6df")
-		(property "Netclass" "CANH"
-			(at 358.8385 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at 167.64 -57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 273.05 31.75 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "85471545-8d46-4a6e-8405-bd908a6c41b0")
-		(property "Netclass" "OSCX_OUT"
-			(at 273.7485 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at 82.55 -50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 171.45 193.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8b0764ae-6069-4b35-af16-20ee08748f1c")
-		(property "Netclass" "SDA"
-			(at 172.1485 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -67.31 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 205.74 33.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "97c35634-968a-4955-97c2-29e5c8cfab30")
-		(property "Netclass" "OSC_IN"
-			(at 206.4385 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at 15.24 -49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 158.75 162.56 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "98594ca4-6004-44fc-8a18-835c44f425f2")
-		(property "Netclass" "OSCX_OUT"
-			(at 159.4485 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -31.75 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 63.5 198.12 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9cd21493-e14a-4119-9ec6-f45d77f685ea")
-		(property "Netclass" "SWDIO"
-			(at 64.1985 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -251.46 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 30.48 30.48 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b11384c0-3bad-4792-94d8-c6f905d508a8")
-		(property "Netclass" "SCL"
-			(at 31.1785 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -284.48 -7.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 57.15 172.72 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bda1e7dc-b2df-4afe-baca-ccfd95b91950")
-		(property "Netclass" "VCP_RX"
-			(at 57.8485 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -181.61 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 359.41 43.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bf14796f-be97-4239-9fa4-967a1db3f776")
-		(property "Netclass" "CANL"
-			(at 360.1085 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at 168.91 -39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 91.44 85.09 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c67a3947-6d9b-4718-b0ed-7df4e8155c5f")
-		(property "Netclass" "NRST"
-			(at 92.1385 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -306.07 -27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 158.75 238.76 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c746916b-13bc-44fe-b07b-322e0962c870")
-		(property "Netclass" "OSC_IN"
-			(at 159.4485 236.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -30.48 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 162.56 190.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ca54f7d4-3646-44e1-b998-68418d0d3da0")
-		(property "Netclass" "SCL"
-			(at 163.2585 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -152.4 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 306.07 27.94 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cf07330c-e99a-4b2f-8f84-92f44610b27d")
-		(property "Netclass" "CAN_TX"
-			(at 306.7685 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at 116.84 -55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 24.13 33.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cf522a11-e4b6-422b-b6bd-16fabd1db0e5")
-		(property "Netclass" "NO+"
-			(at 24.8285 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -214.63 -7.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 95.25 107.95 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d6f9e781-a59b-4d62-a9d7-ac8595911e57")
-		(property "Netclass" "VCP_RX"
-			(at 95.9485 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -143.51 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 54.61 200.66 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d71bb83b-59cc-4baf-9d21-988d8cb62ac9")
-		(property "Netclass" "SWCLK"
-			(at 55.3085 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -184.15 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 306.07 33.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d789f4cb-3332-4006-b10b-2b9a02876dd3")
-		(property "Netclass" "CAN_RX"
-			(at 306.7685 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at 115.57 -49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 35.56 27.94 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dafa1f94-04c8-4e0a-83e6-63eee4db9ee7")
-		(property "Netclass" "SDA"
-			(at 36.2585 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -203.2 -12.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 153.67 187.96 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dfd2c36e-689e-4959-b290-bee134eb98ae")
-		(property "Netclass" "EOC"
-			(at 154.3685 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -161.29 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
+	(label "OSC_OUT"
 		(at 160.02 165.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "e53ba590-c7ed-484e-afb1-de15152ce0e4")
-		(property "Netclass" "OSC_OUT"
-			(at 160.7185 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -29.21 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
+		(uuid "187239c4-da43-4256-ae9f-7c899bb46edb")
 	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 95.25 90.17 0)
-		(fields_autoplaced yes)
+	(label "NRST"
+		(at 91.44 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "eaac376a-996a-435a-80f9-73fe057c6a00")
-		(property "Netclass" "SWCLK"
-			(at 95.9485 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+		(uuid "191a53f2-ffa2-4607-be62-b12b81c9a130")
+	)
+	(label "SCL"
+		(at 35.56 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(property "Component Class" ""
-			(at -143.51 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
+		(uuid "215cf424-001a-455e-8da0-1761edb80835")
+	)
+	(label "SWCLK"
+		(at 96.52 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
+		(uuid "38cc9e25-cf5f-406a-98ff-88c145d6b55f")
+	)
+	(label "SCL"
+		(at 172.72 190.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "47788a39-d596-4f05-ac7b-bd2688f49658")
+	)
+	(label "SDA"
+		(at 35.56 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4c177ed9-9c9e-4ec2-8a26-ee669d41866e")
+	)
+	(label "CAN_TX"
+		(at 166.37 215.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c64087b-6eb3-4650-b8dd-8fac85f2f35d")
+	)
+	(label "CAN_RX"
+		(at 166.37 213.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7896d492-9785-4ba1-8332-8bc180332a92")
+	)
+	(label "OSCX_IN"
+		(at 247.65 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7fb9b6c8-63b6-4d16-b0e6-2380f21367a9")
+	)
+	(label "SWDIO"
+		(at 96.52 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "96bb5590-622e-44fd-92e9-1327de8d54ec")
+	)
+	(label "OSC_IN"
+		(at 158.75 238.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a2139da5-a71c-462b-952d-ffa0744bc2d1")
+	)
+	(label "CANH"
+		(at 359.41 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a99a037b-44ac-4f71-9596-2b3da4318343")
+	)
+	(label "RES"
+		(at 101.6 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "abaef3ba-7cfb-4b67-a766-f9ec1ba996db")
+	)
+	(label "OSC_IN"
+		(at 205.74 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad426ce9-2e30-4c72-9d06-25f5b795c35d")
+	)
+	(label "NO+"
+		(at 30.48 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b1ec0fa9-82d6-4a9f-b00a-c2a296ee205d")
+	)
+	(label "VCP_TX"
+		(at 66.04 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b35a975a-1fb4-43b8-b0eb-9a42701cb8e1")
+	)
+	(label "EOC"
+		(at 153.67 187.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b507e904-cc7c-44b2-8644-c80860f4d219")
+	)
+	(label "NO-"
+		(at 30.48 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bbfc4798-74e0-41a6-ab94-5ba8e739815a")
+	)
+	(label "NRST"
+		(at 57.15 246.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bfe643e6-6ff4-4694-b229-9e3747b084e2")
+	)
+	(label "OSCX_IN"
+		(at 63.5 243.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c9358bf4-4257-4f5e-ade1-4d68c1715b36")
+	)
+	(label "OSCX_OUT"
+		(at 160.02 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc07747d-96d6-4ba9-8699-050115e56156")
+	)
+	(label "SDA"
+		(at 172.72 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0e127dd-5ebc-41a0-b5a9-4f0d4f1378b8")
+	)
+	(label "CAN_RX"
+		(at 306.07 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d29ec0cf-3969-4a5e-881b-76cfaed942ab")
+	)
+	(label "SWCLK"
+		(at 63.5 200.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d58d8b31-8f21-4573-a105-2e115330b574")
+	)
+	(label "SDA"
+		(at 163.83 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da91c9b8-4f0e-457c-befa-b6de5a4654c3")
+	)
+	(label "EOC"
+		(at 101.6 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e30b9c04-1fee-4037-ba5e-fe026149e8e1")
+	)
+	(label "SCL"
+		(at 163.83 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e30e381d-7bd0-484f-919f-64292ac895c3")
+	)
+	(label "VCP_TX"
+		(at 96.52 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5eb4060-3e90-4eb4-9424-6e9ef0cb2882")
+	)
+	(label "SWDIO"
+		(at 63.5 198.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e61a3779-e329-44b9-833b-c5615d6472a5")
+	)
+	(label "VCP_RX"
+		(at 66.04 172.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e963a245-1209-4f84-b5e7-27045ad3d80f")
+	)
+	(label "CAN_TX"
+		(at 306.07 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f327eb38-77dc-42f4-995e-2e4a061e91da")
+	)
+	(label "OSCX_OUT"
+		(at 273.05 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f71faa7e-8ceb-4951-abdf-53e2487140ac")
+	)
+	(label "CANL"
+		(at 359.41 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc26dd90-4982-4752-b6ab-5000d81e3aac")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -8703,7 +7737,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 275.2852 171.45 0)
 			(effects
 				(font
@@ -8722,6 +7756,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 274.32 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 274.32 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 274.32 167.64 0)
 			(effects
 				(font
@@ -8800,6 +7852,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 351.79 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 351.79 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "64693d26-3a2b-4da3-b69e-4b1bd7edc756")
 		)
@@ -8843,7 +7913,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 336.2452 181.61 0)
 			(effects
 				(font
@@ -8862,6 +7932,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 335.28 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 335.28 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 335.28 177.8 0)
 			(effects
 				(font
@@ -9006,6 +8094,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 269.24 176.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 269.24 176.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b1567887-119a-48ad-ad5a-4bb76ca218a0")
 		)
@@ -9049,7 +8155,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 37.7952 41.91 0)
 			(effects
 				(font
@@ -9068,6 +8174,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 36.83 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 36.83 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 36.83 38.1 0)
 			(effects
 				(font
@@ -9251,7 +8375,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 225.7552 45.72 0)
 			(effects
 				(font
@@ -9270,6 +8394,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 224.79 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 224.79 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 224.79 41.91 0)
 			(effects
 				(font
@@ -9480,6 +8622,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 302.26 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 302.26 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "00d31e88-b4dc-472a-8e38-ab70f13d3a35")
 		)
@@ -9682,6 +8842,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 168.91 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 168.91 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "043a9c75-ce82-4008-a507-7c3c514f0a76")
 		)
@@ -9692,74 +8870,6 @@
 			(project "pcbv"
 				(path "/96fbe704-c415-4a54-ac40-dd09e6fa9554"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 292.1 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "36aecc14-797f-4fba-9446-8e0b9c24c57b")
-		(property "Reference" "J3"
-			(at 292.735 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 292.735 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 292.1 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 292.1 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 292.1 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d24b45d8-c2e1-4d25-9269-09fbe3bef50a")
-		)
-		(pin "1"
-			(uuid "2867b681-44bf-40c7-82ab-4c48b1705549")
-		)
-		(instances
-			(project ""
-				(path "/96fbe704-c415-4a54-ac40-dd09e6fa9554"
-					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -9859,7 +8969,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 192.7352 97.79 0)
 			(effects
 				(font
@@ -9878,6 +8988,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 191.77 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 191.77 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 191.77 93.98 0)
 			(effects
 				(font
@@ -9948,6 +9076,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 302.26 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 302.26 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 302.26 179.07 0)
 			(effects
 				(font
@@ -10131,7 +9277,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 158.4452 97.79 0)
 			(effects
 				(font
@@ -10150,6 +9296,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 157.48 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 157.48 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 157.48 93.98 0)
 			(effects
 				(font
@@ -10201,7 +9365,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 213.0552 45.72 0)
 			(effects
 				(font
@@ -10220,6 +9384,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 212.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 212.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 212.09 41.91 0)
 			(effects
 				(font
@@ -10289,6 +9471,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 229.87 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 229.87 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 229.87 175.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10498,6 +9698,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 372.11 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 372.11 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1bae40d7-b834-4d90-be94-5b671e5e5ed6")
 		)
@@ -10586,6 +9804,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 36.83 246.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4dffb9be-fe7e-4a3a-b991-f424bad36973")
+		(property "Reference" "SW1"
+			(at 36.83 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "generic 6mm tht switch"
+			(at 36.83 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+			(at 36.83 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 36.83 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 36.83 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 36.83 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5bfc7964-2568-4ef0-9893-d80d3bf7e05f")
+		)
+		(pin "1"
+			(uuid "ce1d0058-12d0-4eee-9dfd-e5d06d11666e")
+		)
+		(instances
+			(project ""
+				(path "/96fbe704-c415-4a54-ac40-dd09e6fa9554"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Sensor_Gas:SCD40-D-R2")
 		(at 151.13 39.37 0)
 		(unit 1)
@@ -10632,6 +9936,24 @@
 			)
 		)
 		(property "Description" "Photoacoustic CO2 sensor, 40 000 ppm, I2C, 2.4-5.5 V, Base accuracy  400 - 2000 ppm"
+			(at 151.13 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 151.13 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 151.13 39.37 0)
 			(effects
 				(font
@@ -10725,6 +10047,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 53.34 251.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 53.34 251.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e9cfb60a-0c69-448e-9f10-3b3551f00303")
 		)
@@ -10768,7 +10108,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 313.3852 181.61 0)
 			(effects
 				(font
@@ -10787,6 +10127,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 312.42 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 312.42 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 312.42 177.8 0)
 			(effects
 				(font
@@ -11263,6 +10621,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 205.74 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 205.74 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "20"
 			(uuid "8f37adf9-b09f-4615-9a87-098aa91b4c1e")
 		)
@@ -11624,7 +11000,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 44.1452 254 0)
 			(effects
 				(font
@@ -11643,6 +11019,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 43.18 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 43.18 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 43.18 250.19 0)
 			(effects
 				(font
@@ -11826,7 +11220,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 319.7352 87.63 0)
 			(effects
 				(font
@@ -11845,6 +11239,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 318.77 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 318.77 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 318.77 83.82 0)
 			(effects
 				(font
@@ -12094,7 +11506,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 267.6652 44.45 0)
 			(effects
 				(font
@@ -12113,6 +11525,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 266.7 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 266.7 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 266.7 40.64 0)
 			(effects
 				(font
@@ -12164,7 +11594,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 324.8152 181.61 0)
 			(effects
 				(font
@@ -12183,6 +11613,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 323.85 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 323.85 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 323.85 177.8 0)
 			(effects
 				(font
@@ -12267,80 +11715,6 @@
 			(project "pcbv"
 				(path "/96fbe704-c415-4a54-ac40-dd09e6fa9554"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_MEC_5G")
-		(at 36.83 246.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a9adf4ff-19a7-4f52-97b3-a245c539b775")
-		(property "Reference" "SW1"
-			(at 36.83 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "generic 6mm tht switch"
-			(at 36.83 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 36.83 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488"
-			(at 36.83 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MEC 5G single pole normally-open tactile switch"
-			(at 36.83 246.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0d556099-5285-43fd-8dc0-6e476c041b93")
-		)
-		(pin "4"
-			(uuid "ad500426-119c-4456-8995-1b215d47c051")
-		)
-		(pin "1"
-			(uuid "32e22f87-56e9-4cd7-8a4e-8c7955155229")
-		)
-		(pin "3"
-			(uuid "14b2ee5b-e449-4fe9-8e43-9fa14b0c6b84")
-		)
-		(instances
-			(project ""
-				(path "/96fbe704-c415-4a54-ac40-dd09e6fa9554"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -12467,6 +11841,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 184.15 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 184.15 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5c247107-1dbd-4d4b-b480-4cb714c84edf")
 		)
@@ -12576,7 +11968,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 169.8752 97.79 0)
 			(effects
 				(font
@@ -12595,6 +11987,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 168.91 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 168.91 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 168.91 93.98 0)
 			(effects
 				(font
@@ -12673,6 +12083,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 179.07 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 179.07 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a947ab95-1da5-4b57-8944-18cd8d2206ed")
 		)
@@ -12716,7 +12144,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 216.8652 176.53 0)
 			(effects
 				(font
@@ -12735,6 +12163,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 215.9 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 215.9 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 215.9 172.72 0)
 			(effects
 				(font
@@ -12974,6 +12420,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 327.66 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 327.66 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "dde0f2f9-8cfd-429d-9232-ca4e8e65cd38")
 		)
@@ -13061,6 +12525,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 248.92 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 248.92 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "0de74276-a858-48fa-83d7-86fa4e7b0943")
 		)
@@ -13116,7 +12598,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 342.5952 87.63 0)
 			(effects
 				(font
@@ -13135,6 +12617,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 341.63 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 341.63 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 341.63 83.82 0)
 			(effects
 				(font
@@ -13205,6 +12705,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 43.18 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 43.18 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 43.18 25.4 0)
 			(effects
 				(font
@@ -13311,6 +12829,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 293.37 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 293.37 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1253d310-2b70-4a4d-953f-fe8809e853bd")
 		)
@@ -13354,7 +12890,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 254.9652 44.45 0)
 			(effects
 				(font
@@ -13373,6 +12909,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 254 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 254 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 254 40.64 0)
 			(effects
 				(font
@@ -13717,6 +13271,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 330.2 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 330.2 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "30584d68-dc38-4969-b55c-9cc184e96dad")
 		)
@@ -13856,6 +13428,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 365.76 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 365.76 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cfa0453a-1227-4525-aec7-b424999fb74e")
 		)
@@ -13965,7 +13555,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 181.3052 97.79 0)
 			(effects
 				(font
@@ -13984,6 +13574,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 180.34 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 180.34 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 180.34 93.98 0)
 			(effects
 				(font
@@ -14118,6 +13726,24 @@
 			)
 		)
 		(property "Description" "Two pin crystal"
+			(at 260.35 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 260.35 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 260.35 31.75 0)
 			(effects
 				(font
@@ -14327,6 +13953,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 160.02 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 160.02 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5e4982dd-62d7-4a19-a7de-73740a3c158f")
 		)
@@ -14416,7 +14060,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ebbe1687-0867-41e0-94e4-300aa1708b00")
 		(property "Reference" "#PWR029"
 			(at 302.26 39.37 0)
@@ -14428,7 +14071,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 302.26 30.48 0)
+			(at 302.26 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14521,6 +14164,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 74.93 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 74.93 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 74.93 165.1 0)
 			(effects
 				(font
@@ -14851,6 +14512,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 74.93 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 74.93 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "9"
 			(uuid "250924e8-27c8-48bb-b771-b5ab9ecf2ba8")
 		)
@@ -15015,6 +14694,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 356.87 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 356.87 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 356.87 175.26 0)
 			(effects
 				(font
