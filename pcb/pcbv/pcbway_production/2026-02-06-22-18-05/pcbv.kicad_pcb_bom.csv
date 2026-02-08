@@ -1,0 +1,30 @@
+﻿Designator,Quantity,Value,Footprint,Package,MPN,DNP,Mount_Type,Description
+C1,1,CL21C102JBCNNNC,C_0805_2012Metric,,,,smt,Unpolarized capacitor
+"C10, C2, C5, C6",4,1210B104K251CT,C_1210_3225Metric,,,,smt,Unpolarized capacitor
+"C11, C7, C8, C9",4,C0805C100J5GACTU,C_0805_2012Metric,,,,smt,Unpolarized capacitor
+C12,1,1210B474K250NT,C_1210_3225Metric,,,,smt,Unpolarized capacitor
+"C13, C14, C15, C17, C3",5,CL32B475KBJVPNE,C_1210_3225Metric,,,,smt,Unpolarized capacitor
+"C16, C4",2,HMK325B7105KN-T,C_1210_3225Metric,,,,smt,Unpolarized capacitor
+D1,1,ESDZL5-1F4,D_0201_0603Metric,,,,smt,Schottky diode
+D2,1,PMEG6010CEH,D_SOD-123F,,,,smt,"60V, 1A very low Vf MEGA Schottky barrier rectifier, SOD-123F"
+F1,1,Don't place,Fuseholder_Clip-5x20mm_Bel_FC-203-22_Lateral_P17.80x5.00mm_D1.17mm_Horizontal,,,,tht,Fuse
+J1,1,20021111-00014T1LF,PinHeader_2x07_P1.27mm_Vertical,,,,tht,"ST Debug Connector, standard ARM Cortex-M SWD and JTAG interface plus UART"
+J2,1,Don't place,PinHeader_1x02_P2.54mm_Vertical,,,,tht,"Generic connector, single row, 01x02, script generated"
+J4,1,1715747,"TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal",,,,tht,"Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+J5,1,Don't place,PinHeader_1x02_P2.54mm_Vertical,,,,tht,"Generic connector, single row, 01x02, script generated"
+J6,1,Don't place,PinHeader_1x02_P2.54mm_Vertical,,,,tht,"Generic connector, single row, 01x02, script generated"
+J7,1,Don't place,PinHeader_1x02_P2.54mm_Vertical,,,,tht,"Generic connector, single row, 01x02, script generated"
+L1,1,SRN5020TA-180M,L_Taiyo-Yuden_MD-5050,,,,smt,SRN5020TA-180M
+"R1, R2, R4",3,RK73H2ATTD1002F,R_0805_2012Metric,,,,smt,Resistor
+R3,1,CR0805-FX-3302ELF,R_0805_2012Metric,,,,smt,Resistor
+R5,1,KTR10EZPF1200,R_0805_2012Metric,,,,smt,Resistor
+R6,1,CRCW0805100KFKEAC,R_0805_2012Metric,,,,smt,Resistor
+SW1,1,Don't place,SW_PUSH_6mm,,,,tht,"Push button switch, generic, two pins"
+U1,1,MPRLS0025PA00001A,MPRLS_HNW,,,,smt,
+U2,1,STM32C092RCT6,LQFP64_STM,,,,smt,
+U3,1,SCD40-D-R2,Sensirion_SCD4x-1EP_10.1x10.1mm_P1.25mm_EP4.8x4.8mm,,,,smt,"Photoacoustic CO2 sensor, 40 000 ppm, I2C, 2.4-5.5 V, Base accuracy  400 - 2000 ppm"
+U4,1,LV2862YDDCT,SOT-23-6,,,,smt,"60V, 0.6A, stepdown, DC/DC converter, 2.1MHz"
+U5,1,TLV709A50DBVR,SOT-23_2p92X2p37_TLV1709_DBZ_TEX,,,,smt,
+U6,1,TJA1051T/3,SOIC-8_3.9x4.9mm_P1.27mm,,,,smt,"High-Speed CAN Transceiver, separate VIO, silent mode, SOIC-8"
+Y1,1,E9X480072ZA3,Crystal_SMD_2016-4Pin_2.0x1.6mm,,,,smt,E9X480072ZA3
+Y2,1,E3K327071405,Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm,,,,smt,E3K327071405

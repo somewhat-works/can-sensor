@@ -1534,6 +1534,142 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Fuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -5444,12 +5580,6 @@
 		(uuid "473383bc-b227-464a-a425-bf72c909f478")
 	)
 	(junction
-		(at 53.34 246.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4bf2eb63-a21c-47bf-b8a7-c5da5192f46e")
-	)
-	(junction
 		(at 318.77 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5472,6 +5602,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6b50d302-e58c-4929-a247-60049e5f8f47")
+	)
+	(junction
+		(at 67.31 246.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "786e6666-a747-4043-bcc9-1c40656a8326")
 	)
 	(junction
 		(at 36.83 33.02)
@@ -5691,7 +5827,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 246.38) (xy 53.34 247.65)
+			(xy 67.31 246.38) (xy 67.31 247.65)
 		)
 		(stroke
 			(width 0)
@@ -5911,7 +6047,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 256.54) (xy 53.34 256.54)
+			(xy 48.26 256.54) (xy 67.31 256.54)
 		)
 		(stroke
 			(width 0)
@@ -6491,7 +6627,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 255.27) (xy 53.34 256.54)
+			(xy 67.31 255.27) (xy 67.31 256.54)
 		)
 		(stroke
 			(width 0)
@@ -6661,6 +6797,16 @@
 	)
 	(wire
 		(pts
+			(xy 359.41 21.59) (xy 365.76 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2fd9d48-3533-4de9-8ebf-a8fa5822caee")
+	)
+	(wire
+		(pts
 			(xy 254 45.72) (xy 254 44.45)
 		)
 		(stroke
@@ -6801,7 +6947,27 @@
 	)
 	(wire
 		(pts
-			(xy 314.96 78.74) (xy 318.77 78.74)
+			(xy 346.71 20.32) (xy 351.79 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1e5c0a2-4cc0-4027-8d66-cd9a71990537")
+	)
+	(wire
+		(pts
+			(xy 351.79 20.32) (xy 351.79 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4a16a38-8afc-433f-b478-c2303e7c07e0")
+	)
+	(wire
+		(pts
+			(xy 297.18 78.74) (xy 318.77 78.74)
 		)
 		(stroke
 			(width 0)
@@ -6828,6 +6994,16 @@
 			(type default)
 		)
 		(uuid "b6ca5c16-4487-43f2-96d0-6a07fb157ef1")
+	)
+	(wire
+		(pts
+			(xy 67.31 246.38) (xy 74.93 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b87fe28b-49e8-432f-bb60-78b9486234ee")
 	)
 	(wire
 		(pts
@@ -6858,16 +7034,6 @@
 			(type default)
 		)
 		(uuid "be66f726-c829-4012-9415-c482ec043e85")
-	)
-	(wire
-		(pts
-			(xy 53.34 246.38) (xy 74.93 246.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be933313-44f0-4277-baa5-b967b4014f44")
 	)
 	(wire
 		(pts
@@ -7111,7 +7277,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 246.38) (xy 53.34 246.38)
+			(xy 43.18 246.38) (xy 67.31 246.38)
 		)
 		(stroke
 			(width 0)
@@ -7241,7 +7407,7 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 26.67) (xy 365.76 29.21)
+			(xy 365.76 21.59) (xy 365.76 29.21)
 		)
 		(stroke
 			(width 0)
@@ -8217,7 +8383,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 314.96 78.74 0)
+		(at 297.18 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8226,7 +8392,7 @@
 		(fields_autoplaced yes)
 		(uuid "1a0493b8-87ce-4ac7-b861-ce262c6ee6b4")
 		(property "Reference" "#PWR026"
-			(at 314.96 82.55 0)
+			(at 297.18 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8235,7 +8401,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 314.96 73.66 0)
+			(at 297.18 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8243,7 +8409,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 314.96 78.74 0)
+			(at 297.18 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8252,7 +8418,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 314.96 78.74 0)
+			(at 297.18 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8261,7 +8427,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 314.96 78.74 0)
+			(at 297.18 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9994,7 +10160,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 53.34 251.46 270)
+		(at 67.31 251.46 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10003,7 +10169,7 @@
 		(fields_autoplaced yes)
 		(uuid "5d584691-4dc1-462a-b02a-78d8bd6de286")
 		(property "Reference" "D1"
-			(at 55.88 249.8724 90)
+			(at 69.85 249.8724 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10012,7 +10178,7 @@
 			)
 		)
 		(property "Value" "ESDZL5-1F4"
-			(at 55.88 252.4124 90)
+			(at 69.85 252.4124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10021,7 +10187,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
-			(at 53.34 251.46 0)
+			(at 67.31 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10030,7 +10196,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 251.46 0)
+			(at 67.31 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10039,7 +10205,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 53.34 251.46 0)
+			(at 67.31 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10048,7 +10214,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 53.34 251.46 90)
+			(at 67.31 251.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10057,7 +10223,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 53.34 251.46 90)
+			(at 67.31 251.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10500,7 +10666,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 365.76 26.67 0)
+		(at 346.71 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10509,7 +10675,7 @@
 		(fields_autoplaced yes)
 		(uuid "6cccc9c9-4750-4c32-a7a0-0aca0f049b9f")
 		(property "Reference" "#PWR036"
-			(at 365.76 30.48 0)
+			(at 346.71 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10518,7 +10684,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 365.76 21.59 0)
+			(at 346.71 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10526,7 +10692,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 365.76 26.67 0)
+			(at 346.71 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10535,7 +10701,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 365.76 26.67 0)
+			(at 346.71 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10544,7 +10710,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 365.76 26.67 0)
+			(at 346.71 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12239,7 +12405,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-e9xa-automotive-crystal-resonator-mhz-data-sheet-elx1391-en.pdf"
 			(at 218.44 33.02 0)
 			(effects
 				(font
@@ -12248,7 +12414,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+		(property "Description" "E9X480072ZA3"
 			(at 218.44 33.02 0)
 			(effects
 				(font
@@ -12489,7 +12655,7 @@
 				)
 			)
 		)
-		(property "Value" "LV2862YDDC"
+		(property "Value" "LV2862YDDCT"
 			(at 248.92 162.56 0)
 			(effects
 				(font
@@ -12794,7 +12960,7 @@
 				)
 			)
 		)
-		(property "Value" "18u-RLB0914-180KL"
+		(property "Value" "18u"
 			(at 293.37 170.18 90)
 			(effects
 				(font
@@ -12802,7 +12968,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP"
+		(property "Footprint" "Inductor_SMD:L_Taiyo-Yuden_MD-5050"
 			(at 293.37 172.72 0)
 			(effects
 				(font
@@ -12820,7 +12986,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "SRN5020TA-180M"
 			(at 293.37 172.72 0)
 			(effects
 				(font
@@ -13233,7 +13399,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TLV709A50DBZR"
+		(property "Value" "TLV709A50"
 			(at 339.09 101.5999 90)
 			(effects
 				(font
@@ -13716,7 +13882,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-e3k-crystal-resonator-khz-data-sheet-elx1445-en.pdf"
 			(at 260.35 31.75 0)
 			(effects
 				(font
@@ -13725,7 +13891,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Two pin crystal"
+		(property "Description" "E3K327071405"
 			(at 260.35 31.75 0)
 			(effects
 				(font
@@ -14112,6 +14278,74 @@
 			(project ""
 				(path "/96fbe704-c415-4a54-ac40-dd09e6fa9554"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 355.6 21.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec42d61e-7d0e-4366-a2dc-f5e73cdfa73b")
+		(property "Reference" "F1"
+			(at 355.6 15.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fuse"
+			(at 355.6 17.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Bel_FC-203-22_Lateral_P17.80x5.00mm_D1.17mm_Horizontal"
+			(at 355.6 23.368 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 355.6 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 355.6 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be055dae-3170-4f81-8287-7527b482621f")
+		)
+		(pin "2"
+			(uuid "4bb0f271-6390-43a8-99b6-6f7ca5ec9d37")
+		)
+		(instances
+			(project "pcbv"
+				(path "/96fbe704-c415-4a54-ac40-dd09e6fa9554"
+					(reference "F1")
 					(unit 1)
 				)
 			)
